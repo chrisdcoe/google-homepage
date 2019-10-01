@@ -15,14 +15,6 @@ p a {
   color: rgb(26, 13, 171);
 }
 
-header a {
-  color: black;
-  display: inline-block;
-}
-
-footer a {
-  color: #5f5f5f;
-}
 
 header {
   display: block;
@@ -32,20 +24,59 @@ header {
   padding-top: 1.5em;
 }
 
+header a {
+  color: black;
+  display: inline-block;
+  line-height: 24px;
+  vertical-align: middle;
+  opacity: 0.75;
+
+}
+
 #header-left {
   float: left;
+  height: 32px;
+  position: relative;
 }
 
 #header-left a {
-  padding-left: 1.5em;
+  margin-left: 1.5em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #header-right {
   float: right;
+  position: relative;
+  
+  text-align: right;
+
 }
 
 #header-right a {
-  padding-right: 1.5em;
+  margin-right: 1.5em;
+}
+
+.btn_account {
+  background-image: url(https://avatars1.githubusercontent.com/u/21205582?s=460&v=4);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-size: 32px 32px;
+}
+
+.btn_googleapps {
+  background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+  background-size: 528px 68px;
+  background-position: -132px -38px;
+  opacity: .55;
+  height: 30px;
+  width: 30px;
+}
+
+.btn_googleapps:hover {
+  opacity: 0.85;
 }
 
 .content {
@@ -70,6 +101,7 @@ header {
   padding: 0 16px;
   min-width: 54px;
   height: 36px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -78,6 +110,77 @@ header {
   background-color: #f8f8f8;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
+}
+
+/*
+form {
+
+}
+*/
+
+.searchbar {
+  display: flex;
+  width: 482px;
+  height: 44px;
+  margin: 0 auto;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: none;
+}
+
+.searchbar:hover {
+  box-shadow: 0 2px 5px 0px lightgrey;
+}
+
+.lens_container {
+  padding-right: 13px;
+  align-items: center;
+  display: flex;
+  padding-left: 14px;
+}
+
+.lens {
+  height: 20px;
+  width: 20px;
+  color: #9AA0A6;
+  fill: currentColor;
+}
+
+
+.textfield {
+  display: flex;
+  flex: 100%;
+}
+
+.textfield input {
+  display: flex;
+  flex: 100%;
+  border: none;
+  outline: none;
+  color: rgba(0,0,0,.87);
+  font: 16px arial, sans-serif;
+}
+
+.microphone_container {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  padding: 0 16px 0 8px;
+  width: 24px;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.microphone {
+  background: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
+  height: 24px;
+  width: 24px;
+  background-size: 24px;
+  vertical-align: middle;
+}
+
+.buttonrow {
+  padding-top: 18px;
 }
 
 footer {
@@ -89,6 +192,10 @@ footer {
   width: 100%;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+footer a {
+  color: #5f5f5f;
 }
 
 #footer-left {
